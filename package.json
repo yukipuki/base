@@ -1,0 +1,25 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "This is my base template for prototyping websites",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukipuki/base.git"
+  },
+  "author": "Dawid Sappich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yukipuki/base/issues"
+  },
+  "homepage": "https://github.com/yukipuki/base#readme"
+}
