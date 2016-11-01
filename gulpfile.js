@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var ts = require('gulp-typescript');
+var srcMaps = require('gulp-sourcemaps');
 
 var tsPattern = 'app/**/*.ts';
 var tsRootDir = './app';
@@ -17,7 +18,9 @@ var options = {
 
 gulp.task('compileTypeScript', () => {
 	gulp.src(tsPattern)
+		.pipe(srcMaps.init())
 		.pipe(ts(options))
+		.pipe(srcMaps.write('../dist'))
 		.pipe(gulp.dest(jsOutDir));
 });
 
